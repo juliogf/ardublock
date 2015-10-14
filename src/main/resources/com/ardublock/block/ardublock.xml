@@ -56,7 +56,7 @@
 				<BlockConnector connector-type="cmd" connector-kind="socket" label="bc.loop" />
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="loop" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="yes">
+		<BlockGenus name="loop" kind="command" color="9 92 161" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="yes">
 			<description>
 				<text>this is the loop of the arduino</text>
 			</description>
@@ -68,9 +68,9 @@
 		<BlockGenus name="loop1" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
 		<BlockGenus name="loop2" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
 		<BlockGenus name="loop3" kind="command" color="255 240 0" initlabel="bg.loop" is-starter="yes" is-terminator="yes" label-unique="no" />
-		<!-- end of legacy support -->
+		<!-- end of legacy support --><!--***DELAY***-->
 
-		<BlockGenus name="delay" kind="command" color="255 221 0" initlabel="bg.delay">
+		<BlockGenus name="delay" kind="command" color="9 92 161" initlabel="bg.delay">
 			<description>
 				<text>program delay in x milliseconds</text>
 			</description>
@@ -79,7 +79,7 @@
 					<DefaultArg genus-name="number" label="1000" />
 				</BlockConnector>
 			</BlockConnectors>
-		</BlockGenus>
+		</BlockGenus><!--*******************-->
 		<BlockGenus name="if" kind="command" initlabel="bg.if" color="255 221 0">
 			<description>
 				<text>
@@ -380,7 +380,7 @@
 			
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
-					<DefaultArg genus-name="DuinoEDU_D8" label="D8" />
+					<DefaultArg genus-name="number" label="1" />
 				</BlockConnector>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.frequency">
 					<DefaultArg genus-name="number" label="440" />
@@ -2142,7 +2142,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="serial_println" kind="command" color="245 245 245" initlabel="bg.serial_println">
+		<BlockGenus name="serial_println" kind="command" color="9 92 161" initlabel="bg.serial_println">
 			<description>
 				<text>send message via Serial port</text>
 			</description>
@@ -2212,7 +2212,7 @@
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
-					<DefaultArg genus-name="Tinker_O1" label="O1" />
+					<DefaultArg genus-name="number" label="9" />
 				</BlockConnector>
 				<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.status">
 					<DefaultArg genus-name="digital-on" label="ON" />
@@ -2327,7 +2327,7 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="boolean" connector-kind="plug" />
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
-					<DefaultArg genus-name="Tinker_I1" label="I1" />
+					<DefaultArg genus-name="number" label="1" />
 				</BlockConnector>
 			</BlockConnectors>
 			<Images>
@@ -2378,7 +2378,6 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" />
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
-					<DefaultArg genus-name="Tinker_I1" label="I1" />
 				</BlockConnector>
 			</BlockConnectors>
 			<Images>
@@ -2412,7 +2411,6 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" />
 				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pin_number">
-					<DefaultArg genus-name="Tinker_I1" label="I1" />
 				</BlockConnector>
 			</BlockConnectors>
 			<Images>
@@ -9259,6 +9257,7 @@
   <BlockGenusMember>Tinker_Button</BlockGenusMember>
   <BlockGenusMember>tone</BlockGenusMember>
   <BlockGenusMember>Tinker_LDR</BlockGenusMember>
+  <BlockGenusMember>serial_println</BlockGenusMember>
   
   
 </BlockDrawer> 
@@ -9266,7 +9265,7 @@
 	</BlockDrawerSets>
 
 	<Pages drawer-with-page="yes">
-		<Page page-name="Main" page-width="400" page-color="128 128 128"/>
+		<Page page-name="Main" page-width="400" page-color="28 33 38"/>
 	</Pages>
 
 	<TrashCan>

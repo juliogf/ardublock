@@ -37,6 +37,8 @@ Authors
 * David Li taweili@gmail.com
 * HE Qichen heqichen@gmail.com
 
+Contributors:
+*Julio Gonzalez julio_gonzalezf@hotmail.com
 
 ToDo
 ----
